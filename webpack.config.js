@@ -25,6 +25,17 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
       },
+      {
+        test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+        type: "asset/resource"
+      },
+      {
+        test: /\.pdf$/,
+        type: "asset/resource",
+        generator: {
+          filename: '[name][ext]'
+        }
+      }
     ],
   },
 }

@@ -1,2 +1,3 @@
 import "./style.scss";
-console.log("This is Jack!");
+const resume = require("./assets/Jack_Lo_Resume_2025.pdf");
+console.log("Hello from the console!");
